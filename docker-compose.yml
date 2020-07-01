@@ -1,0 +1,11 @@
+version: "3.4"
+
+services:
+  todo-app:
+    build:
+      context: .
+      target: watch
+    ports:
+      - '8042:80'
+    volumes:
+      - ./:/src
